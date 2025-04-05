@@ -29,7 +29,7 @@
 	{if $hasAccess}
                 <hr class="dashed">
 
-     		<div class="panel panel-default issue">
+     		<div class="panel articleText panel-default issue">
 		<div class="panel-heading">
 			<h2 class="panel-title">
 				Article Text
