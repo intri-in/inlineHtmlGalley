@@ -17,6 +17,7 @@
  * @uses $inlineHtmlGalley string The HTML content of the Article Galley
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$article->getLocalizedTitle()|escape}
+	<a name="top"></a>
 
 <div class="item issue">
 	{if $section}
@@ -26,7 +27,6 @@
 	{/if}
 		{include file="frontend/objects/article_details.tpl" currentTitle=$section->getLocalizedTitle()}
 	{* Anchor for "Back to Top" button *}
-	<a name="top"></a>
 	{if $hasAccess}
 
 
