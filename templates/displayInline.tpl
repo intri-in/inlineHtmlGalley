@@ -27,21 +27,23 @@
 		{include file="frontend/objects/article_details.tpl" currentTitle=$section->getLocalizedTitle()}
 	{* Anchor for "Back to Top" button *}
 	<a name="top"></a>
+	{if $hasAccess}
 
 
-	<h4>Article Text</h4>
-
-	{* Show article inline *}
-	<div class="inline_html_galley">
-	{$inlineHtmlGalley}
-	</div>
-
-	<div class="reader-options">
-		<a class="back-to-top" href="#top">
-			<span class="arrow-gylph">↑</span>
-			{translate key="plugins.generic.inlineHtmlGalley.backToTop"}
-		</a>
-	</div>
+		<h4>Article Text</h4>
+	
+		{* Show article inline *}
+		<div class="inline_html_galley">
+		{$inlineHtmlGalley}
+		</div>
+	
+		<div class="reader-options">
+			<a class="back-to-top" href="#top">
+				<span class="arrow-gylph">↑</span>
+				{translate key="plugins.generic.inlineHtmlGalley.backToTop"}
+			</a>
+		</div>
+       {/if}
 
 	{call_hook name="Templates::Article::Footer::PageFooter"}
 
