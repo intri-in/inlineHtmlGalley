@@ -29,7 +29,7 @@
 	{if $hasAccess}
                 <hr class="dashed">
 
-     		<div class="panel articleText panel-default issue">
+     		<div class="panel panel-default issue">
 		<div class="panel-heading">
 			<h2 class="panel-title">
 				Article Text
@@ -37,7 +37,7 @@
 		</div>
 	
 		{* Show article inline *}
-		<div class="inline_html_galley">
+		<div class="articleText inline_html_galley">
 		{$inlineHtmlGalley}
 		</div>
 	        <br />
