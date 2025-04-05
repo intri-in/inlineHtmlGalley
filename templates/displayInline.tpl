@@ -19,7 +19,7 @@
 {include file="frontend/components/header.tpl" pageTitleTranslated=$article->getLocalizedTitle()|escape}
 	<a name="top"></a>
 
-<div class="panel panel-default issue">
+<div class="panel panel-default">
 
 	{if $section}
 		{include file="frontend/components/breadcrumbs_article.tpl" currentTitle=$section->getLocalizedTitle()}
