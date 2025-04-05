@@ -19,7 +19,7 @@
 {include file="frontend/components/header.tpl" pageTitleTranslated=$article->getLocalizedTitle()|escape}
 	<a name="top"></a>
 
-<div class="item issue">
+<article class="obj_article_details">
 	{if $section}
 		{include file="frontend/components/breadcrumbs_article.tpl" currentTitle=$section->getLocalizedTitle()}
 	{else}
@@ -47,6 +47,6 @@
 
 	{call_hook name="Templates::Article::Footer::PageFooter"}
 
-</div><!-- .page -->
+</article><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}
