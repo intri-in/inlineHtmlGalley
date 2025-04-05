@@ -30,7 +30,7 @@
 	{if $hasAccess}
 
 
-		<h4>Article Text</h4>
+		<h3>Article Text</h3>
 	
 		{* Show article inline *}
 		<div class="inline_html_galley">
