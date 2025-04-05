@@ -41,7 +41,7 @@
 		{$inlineHtmlGalley}
 		</div>
 	        <br />
-		<div class="reader-options">
+		<div class="articleText reader-options">
 			<a class="back-to-top" href="#top">
 				<span class="arrow-gylph">↑</span>
 				{translate key="plugins.generic.inlineHtmlGalley.backToTop"}
