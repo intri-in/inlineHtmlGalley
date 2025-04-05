@@ -30,7 +30,11 @@
 	{if $hasAccess}
                 <hr class="dashed">
 
-		<h3>Article Text</h3>
+		<div class="panel-heading">
+			<h2 class="panel-title">
+				Article Text
+			</h2>
+		</div>
 	
 		{* Show article inline *}
 		<div class="inline_html_galley">
