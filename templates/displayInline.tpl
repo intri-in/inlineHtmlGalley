@@ -29,47 +29,7 @@
 	<a name="top"></a>
 
 
-	<div class="article-main">
-		{if $publication->getData('authors')}
-			<div class="authors">
-				{foreach from=$publication->getData('authors') item=author}
-					<div class="author">
-						<strong>{$author->getFullName()|escape}</strong>
-						{if $author->getLocalizedAffiliation()}
-							<div class="article-author-affilitation">
-								{$author->getLocalizedAffiliation()|escape}
-							</div>
-						{/if}
-						{if $author->getOrcid()}
-							<div class="orcid">
-								<a href="{$author->getOrcid()|escape}" target="_blank">
-									{$orcidIcon}
-									{$author->getOrcid()|escape}
-								</a>
-							</div>
-						{/if}
-					</div>
-				{/foreach}
-			</div>
-		{/if}
-
-		{* Article abstract *}
-		{if $article->getLocalizedAbstract()}
-			<div class="article-summary" id="summary">
-				<div class="article-abstract">
-					{$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}
-				</div>
-			</div>
-			{call_hook name="Templates::Article::Main"}
-		{/if}
-	</div>
-
-	{* Provide download link *}
-	<div class="inline_html_galley_download">
-		<a class="obj_galley_link file" href="{url page="article" op="download" path=$article->getBestArticleId()|to_array:$galley->getBestGalleyId()}">
-			{translate key="common.download"}
-		</a>
-	</div>
+	<h4>Article Text</h4>
 
 	{* Show article inline *}
 	<div class="inline_html_galley">
