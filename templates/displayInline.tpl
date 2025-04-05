@@ -28,16 +28,6 @@
 	{* Anchor for "Back to Top" button *}
 	<a name="top"></a>
 
-	<header>
-		<h1 class="page-header">
-			{$article->getLocalizedTitle()|escape}
-			{if $article->getLocalizedSubtitle()}
-				<small>
-					{$article->getLocalizedSubtitle()|escape}
-				</small>
-			{/if}
-		</h1>
-	</header>
 
 	<div class="article-main">
 		{if $publication->getData('authors')}
