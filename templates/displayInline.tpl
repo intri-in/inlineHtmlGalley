@@ -18,7 +18,7 @@
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$article->getLocalizedTitle()|escape}
 
-<div class="page page_article">
+<section class="page page_article">
 	{if $section}
 		{include file="frontend/components/breadcrumbs_article.tpl" currentTitle=$section->getLocalizedTitle()}
 	{else}
@@ -85,6 +85,6 @@
 
 	{call_hook name="Templates::Article::Footer::PageFooter"}
 
-</div><!-- .page -->
+</section><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}
