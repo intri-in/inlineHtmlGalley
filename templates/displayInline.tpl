@@ -28,7 +28,7 @@
 		{include file="frontend/objects/article_details.tpl" currentTitle=$section->getLocalizedTitle()}
 	{* Anchor for "Back to Top" button *}
 	{if $hasAccess}
-
+                <hr class="dashed">
 
 		<h3>Article Text</h3>
 	
