@@ -24,7 +24,7 @@
 	{else}
 		{include file="frontend/components/breadcrumbs_article.tpl" currentTitleKey="article.article"}
 	{/if}
-
+		{include file="frontend/objects/article_details.tpl" currentTitle=$section->getLocalizedTitle()}
 	{* Anchor for "Back to Top" button *}
 	<a name="top"></a>
 
