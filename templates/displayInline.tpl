@@ -18,9 +18,7 @@
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$article->getLocalizedTitle()|escape}
 	<a name="top"></a>
-
-<div class="panel panel-default">
-
+<div>
 	{if $section}
 		{include file="frontend/components/breadcrumbs_article.tpl" currentTitle=$section->getLocalizedTitle()}
 	{else}
@@ -31,6 +29,7 @@
 	{if $hasAccess}
                 <hr class="dashed">
 
+     		<div class="panel panel-default issue">
 		<div class="panel-heading">
 			<h2 class="panel-title">
 				Article Text
@@ -48,6 +47,8 @@
 				{translate key="plugins.generic.inlineHtmlGalley.backToTop"}
 			</a>
 		</div>
+		</div>
+
                 <br />
        {/if}
 
