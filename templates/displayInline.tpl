@@ -36,13 +36,14 @@
 		<div class="inline_html_galley">
 		{$inlineHtmlGalley}
 		</div>
-	
+	        <br />
 		<div class="reader-options">
 			<a class="back-to-top" href="#top">
 				<span class="arrow-gylph">↑</span>
 				{translate key="plugins.generic.inlineHtmlGalley.backToTop"}
 			</a>
 		</div>
+                <br />
        {/if}
 
 	{call_hook name="Templates::Article::Footer::PageFooter"}
